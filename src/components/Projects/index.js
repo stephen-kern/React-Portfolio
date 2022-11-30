@@ -22,7 +22,7 @@ function Projects() {
           <div class="live-links-text">
             <a href="https://stephen-kern.github.io/challengeOne/">
               <button className="portfolio-buttons">
-                Horiseon <br></br> Made using CSS and HTML
+                Horiseon <br></br> Built using CSS and HTML
               </button>
             </a>
           </div>
@@ -32,7 +32,7 @@ function Projects() {
           <div class="live-links-text">
             <a href="https://github.com/stephen-kern/Hamburger-Helper">
               <button className="portfolio-buttons">
-                Hamburger Helper <br></br> Hamburger-Helper was built using
+                Hamburger Helper <br></br> Built using
                 Node.js, express, sequelize, express-handlebars.
               </button>
             </a>
@@ -43,7 +43,7 @@ function Projects() {
           <div class="live-links-text">
             <a href="https://jakewilsonart.github.io/">
               <button className="portfolio-buttons">
-                Jake Wilson Art Portfolio <br></br> Made using CSS, HTML, and
+                Jake Wilson Art Portfolio <br></br> Built using CSS, HTML, and
                 Javascript
               </button>
             </a>
@@ -54,7 +54,7 @@ function Projects() {
           <div class="live-links-text">
             <a href="https://stephen-kern.github.io/Step2Rythym/">
               <button className="portfolio-buttons">
-                Step2Rhythm<br></br> Made using CSS Framework, HTML, Javascript,
+                Step2Rhythm<br></br> Built using Bulma, HTML, Javascript,
                 and JQuery
               </button>
             </a>

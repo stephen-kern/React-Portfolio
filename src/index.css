@@ -5,9 +5,9 @@ main {
 }
 
 :root {
-  --primary: #8c54ff;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #508AA8;
+  --secondary: #C8E0F4;
+  --tertiary: #9dd1f1;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -34,7 +34,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background: var(--secondary);
   color: var(--light);
   font-family: 'Poiret One', sans-serif;
 
@@ -88,11 +88,11 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 header {
-  background: var(--dark);
+  background: var(--primary);
 }
 
 header a {
@@ -365,5 +365,32 @@ a {
 
 .portfolio-buttons:hover{
   color: var(--dark);
+  transform: translateY(-7px);
+}
+
+/* Contact Section Styles */
+
+.section-title-secondary{
+  text-align: center;
+  font-size: 32px;
+  padding: 25px;
+  color: var(--accent2-color);   
+}
+
+.contact-bg{
+  background-color: var(--primary-color);
+  min-height: 100px;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons{
+  margin: 1.5em;
+}
+
+.contact-info img:hover{
   transform: translateY(-7px);
 }

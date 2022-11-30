@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 import ContactForm from "./components/Contact";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   const [navLinks] = useState([
@@ -25,6 +26,7 @@ function App() {
           {!contactSelected ? (
             <>
             <Projects currentNavLink={currentNavLink}></Projects>
+            <Footer currentNavLink={currentNavLink}></Footer>
             </>
           ) : (
             <ContactForm></ContactForm>

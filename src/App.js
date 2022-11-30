@@ -3,36 +3,31 @@ import Nav from "./components/Nav";
 import ContactForm from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
-  const [navLinks] = useState([
-    { name: "Portfolio" }, { name: "Resume"}
-  ])
+  const [currentNavLink, handleNavChange] = useState("about");
 
-  const [currentNavLink, setCurrentNavLink] = useState(navLinks[0]);
-  const [contactSelected, setContactSelected] = useState(false);
+  const displayNavLink = () => {
+    if (currentNavLink === "About") {
+      return <About />;
+    }
+    if (currentNavLink === "Contact") {
+      return <ContactForm />;
+    }
+    if (currentNavLink === "Projects") {
+      return <Projects />;
+    }
+    if (currentNavLink === "Resume") {
+      // return < />;
+    }
+  };
 
   return (
     <div>
-      <Nav
-        navLinks={navLinks}
-        setCurrentNavLink={setCurrentNavLink}
-        currentNavLink={currentNavLink}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        <div>
-          {!contactSelected ? (
-            <>
-            <Projects currentNavLink={currentNavLink}></Projects>
-            <Footer currentNavLink={currentNavLink}></Footer>
-            </>
-          ) : (
-            <ContactForm></ContactForm>
-          )}
-        </div>
-      </main>
+      <Nav currentNavLink={currentNavLink} handleNavChange={handleNavChange} />
+      <main>{displayNavLink()}</main>
+      <Footer />
     </div>
   );
 }

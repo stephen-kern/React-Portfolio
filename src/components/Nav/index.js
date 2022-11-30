@@ -1,56 +1,57 @@
-import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from "react";
 
 function Nav(props) {
-  const {
-    navLinks = [],
-    setCurrentNavLink,
-    currentNavLink,
-    contactSelected,
-    setContactSelected,
-  } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentNavLink.name);
-  }, [currentNavLink]);
+  const { currentNavLink, handleNavChange } = props;
 
   return (
-    <header className="flex-row px-1">
+    <header>
       <h2>
-        <a href="/">Stephen Kern</a>
+        <a
+          href="#about-me-section"
+          onClick={() => handleNavChange("About")}
+          className={currentNavLink === "About"}
+        >
+          Stephen Kern
+        </a>
       </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
+      <nav className="navbar">
+        <ul>
+          <li className="mx-1">
             <a
-              href="#about"
-              onClick={() => setContactSelected(false)}
+              href="#about-me-section"
+              onClick={() => handleNavChange("About")}
+              className={currentNavLink === "About"}
             >
               About me
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-          {navLinks.map((navLink) => (
-            <li
-              className={`mx-1 ${
-                currentNavLink.name === navLink.name &&
-                !contactSelected &&
-                "navActive"
-              }`}
-              key={navLink.name}
+          <li>
+            <a
+              href="#contact-section"
+              onClick={() => handleNavChange("Contact")}
+              className={currentNavLink === "Contact"}
             >
-              <span
-                onClick={() => {
-                  setCurrentNavLink(navLink);
-                  setContactSelected(false);
-                }}
-              >
-                {capitalizeFirstLetter(navLink.name)}
-              </span>
-            </li>
-          ))}
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects-section"
+              onClick={() => handleNavChange("Projects")}
+              className={currentNavLink === "Projects"}
+            >
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a
+              href="#resume-section"
+              onClick={() => handleNavChange("Resume")}
+              className={currentNavLink === "Resume"}
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

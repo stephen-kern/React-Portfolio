@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Nav from "./components/Nav";
+import ContactForm from "./components/Contact";
+import Projects from "./components/Projects";
 
 function App() {
+  const [navLinks] = useState([
+    { name: "Portfolio" }, { name: "Resume"}
+  ])
+
+  const [currentNavLink, setCurrentNavLink] = useState(navLinks[0]);
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav
+        navLinks={navLinks}
+        setCurrentNavLink={setCurrentNavLink}
+        currentNavLink={currentNavLink}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
+      <main>
+        <div>
+          {!contactSelected ? (
+            <>
+            <Projects currentNavLink={currentNavLink}></Projects>
+            </>
+          ) : (
+            <ContactForm></ContactForm>
+          )}
+        </div>
+      </main>
     </div>
   );
 }

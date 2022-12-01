@@ -21,7 +21,7 @@ function Nav(props) {
               href="#about-me-section"
               onClick={() => handleNavChange("About")}
               className={
-                currentNavLink === "About" ? "resume-link" : "navActive"
+                currentNavLink === "About" ? "navActive" : "noNavActive"
               }
             >
               About me
@@ -32,7 +32,7 @@ function Nav(props) {
               href="#contact-section"
               onClick={() => handleNavChange("Contact")}
               className={
-                currentNavLink === "Contact" ? "resume-link" : "navActive"
+                currentNavLink === "Contact" ? "navActive" : "noNavActive"
               }
             >
               Contact
@@ -43,7 +43,7 @@ function Nav(props) {
               href="#projects-section"
               onClick={() => handleNavChange("Projects")}
               className={
-                currentNavLink === "Projects" ? "resume-link" : "navActive"
+                currentNavLink === "Projects" ? "navActive" : "noNavActive"
               }
             >
               Portfolio
@@ -54,7 +54,7 @@ function Nav(props) {
               href="#resume-section"
               onClick={() => handleNavChange("Resume")}
               className={
-                currentNavLink === "Resume" ? "resume-link" : "navActive"
+                currentNavLink === "Resume" ? "navActive" : "noNavActive"
               }
             >
               Resume

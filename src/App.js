@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Nav from "./components/Nav";
 import ContactForm from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Resume from "./components/Resume";
+import Header from "./components/Header";
 
 function App() {
   const [currentNavLink, handleNavChange] = useState("about");
@@ -19,13 +20,13 @@ function App() {
       return <Projects />;
     }
     if (currentNavLink === "Resume") {
-      // return < />;
+      return <Resume />;
     }
   };
 
   return (
     <div>
-      <Nav currentNavLink={currentNavLink} handleNavChange={handleNavChange} />
+      <Header currentNavLink={currentNavLink} handleNavChange={handleNavChange} />
       <main>{displayNavLink()}</main>
       <Footer />
     </div>

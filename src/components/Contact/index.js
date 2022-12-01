@@ -38,7 +38,7 @@ function ContactForm() {
 
   return (
     <section id="contact-section">
-      <h1 className="text-center">Contact me</h1>
+      <h1 className="section-title">Contact me</h1>
       <div className="flex-row">
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>

@@ -37,3 +37,6 @@ n/a
 
 - Github Username: [stephen-kern](https://github.com/stephen-kern)
 - Contact Email: stephenkern96@gmail.com
+
+![resume-sc](https://user-images.githubusercontent.com/94320530/204967127-53501ac7-9e0a-4609-9d28-394a99dde6f2.png)
+

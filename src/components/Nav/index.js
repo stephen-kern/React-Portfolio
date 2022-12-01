@@ -32,7 +32,7 @@ function Nav(props) {
               href="#contact-section"
               onClick={() => handleNavChange("Contact")}
               className={
-                currentNavLink === "Contact" ? "navActive" : "resume-link"
+                currentNavLink === "Contact" ? "resume-link" : "navActive"
               }
             >
               Contact
@@ -43,7 +43,7 @@ function Nav(props) {
               href="#projects-section"
               onClick={() => handleNavChange("Projects")}
               className={
-                currentNavLink === "Projects" ? "navActive" : "resume-link"
+                currentNavLink === "Projects" ? "resume-link" : "navActive"
               }
             >
               Portfolio
@@ -54,7 +54,7 @@ function Nav(props) {
               href="#resume-section"
               onClick={() => handleNavChange("Resume")}
               className={
-                currentNavLink === "Resume" ? "navActive" : "resume-link"
+                currentNavLink === "Resume" ? "resume-link" : "navActive"
               }
             >
               Resume

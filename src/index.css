@@ -270,6 +270,11 @@ textarea:focus{
   flex-basis: 100%;
 }
 
+.live-link-lw{
+  background: url(./assets/images/live-wire.png);
+  flex-basis: 100%;
+}
+
 .live-links-box{
   display: flex;
   justify-content: center;

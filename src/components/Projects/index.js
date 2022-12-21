@@ -81,6 +81,20 @@ function Projects() {
             </a>
           </div>
         </div>
+
+        <div className="live-link-lw live-links-box">
+          <div className="live-links-text">
+            <a href="https://live-wire-music.herokuapp.com/" target={"_blank"} rel={"noopener noreferrer"}>
+              <button className="portfolio-buttons">
+                Live Wire <br></br> Built using MongoDB, Express, React, Node
+              </button>
+            </a>
+            <a href="https://github.com/stephen-kern/Live-Wire" className="footer-icons">
+              {" "}
+              < FaGithubSquare fontSize={"3em"}/>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

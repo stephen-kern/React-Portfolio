@@ -15,7 +15,7 @@ An updated version of the portfolio I created for myself a in August 2022. This 
 
 ## Installation
 
-If you are opening the application via localhost, you'll need to download the code and run npm start in the root directory terminal. Be sure to have Node.js installed on your machine. You can visit the [Portfolio](https://github.com/stephen-kern/React-Portfolio) here.
+If you are opening the application via localhost, you'll need to download the code and run npm start in the root directory terminal. Be sure to have Node.js installed on your machine. You can visit the [Portfolio](https://stephen-kern.github.io/React-Portfolio/) here.
 
 ## Usage
 

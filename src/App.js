@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ContactForm from "./components/Contact";
-import Projects from "./components/Projects";
+import ContactForm from "./pages/Contact";
+import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
-import About from "./components/About";
-import Resume from "./components/Resume";
+import About from "./pages/About";
+import Resume from "./pages/Resume";
 import Header from "./components/Header";
 
 function App() {

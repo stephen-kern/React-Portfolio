@@ -60,6 +60,17 @@ function Nav(props) {
               Resume
             </a>
           </li>
+          <li>
+            <a
+              href="#resume-section"
+              onClick={() => handleNavChange("Card")}
+              className={
+                currentNavLink === "Card" ? "navActive" : "noNavActive"
+              }
+            >
+              Card
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

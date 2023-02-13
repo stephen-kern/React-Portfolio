@@ -30,7 +30,7 @@ const projectsData = [
 
 function Projects() {
   return (
-    <div>
+    <div className="grid-container">
       <h2 className="section-title">Projects</h2>
       <div className="columns">
         {projectsData.map((project, index) => (

@@ -1,6 +1,5 @@
 import React from "react";
 import portrait from "../../assets/images/portrait.jpeg"
-import Card from "../../components/Card";
 
 function About() {
   return (
@@ -30,7 +29,6 @@ function About() {
           </div>
         </article>
       </div>
-      <Card /> 
     </section>
   );
 }

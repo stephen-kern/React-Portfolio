@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Header from "./components/Header";
-import Card from "./components/Card";
 
 function App() {
   const [currentNavLink, handleNavChange] = useState("about");
@@ -23,13 +22,10 @@ function App() {
     if (currentNavLink === "Resume") {
       return <Resume />;
     }
-    if (currentNavLink === "Card") {
-      return <Card />;
-    }
   };
 
   return (
-    <div>
+    <div className="app">
       <Header
         currentNavLink={currentNavLink}
         handleNavChange={handleNavChange}

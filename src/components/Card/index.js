@@ -3,9 +3,7 @@ import React from "react";
 function Card(props) {
   return (
     <div className="card">
-      <div className="card-image-container">
-        <img src={props.img} alt={props.alt}></img>
-      </div>
+      <img src={props.img} alt={props.alt} className="card__img"></img>
       <div className="card-content">
         <div className="card-info-container">
           <h3 className="card-title">{props.title}</h3>
@@ -13,11 +11,25 @@ function Card(props) {
         </div>
         <div className="card-links">
           <button>
-            <a href={props.githubLink}>GitHub</a>
+            <a
+              href={props.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </button>
-          <button>
-            <a href={props.liveLink}>Live</a>
-          </button>
+          {props.liveLink && (
+            <button>
+              <a
+                href={props.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live
+              </a>
+            </button>
+          )}
         </div>
       </div>
     </div>

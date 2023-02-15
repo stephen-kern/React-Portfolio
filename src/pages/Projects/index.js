@@ -26,7 +26,7 @@ const projectsData = [
     img: RMG,
     alt: "screenshot of a command line interface application",
     title: "Readme Generator",
-    desc: "A CLI application to help developers save time and quickly generate a readme file. Using Node and the Inquirer package, this back-end project allows developers to focus more on their projects.",
+    desc: "A CLI application to help developers save time and quickly generate a readme file. Using only Node and the Inquirer package, this back-end project allows developers to focus more on their projects. Suitable for all types of software development!",
     githubLink: "https://github.com/stephen-kern/Readme-Generator",
   }
 ];

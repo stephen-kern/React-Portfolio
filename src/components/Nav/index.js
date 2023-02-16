@@ -1,34 +1,16 @@
 import React from "react";
 
-function Nav(props) {
-  const { currentNavLink, handleNavChange } = props;
-
+function Nav() {
   return (
     <header>
       <h2>Stephen Kern</h2>
       <nav className="navbar">
         <ul>
           <li className="mx-1">
-            <a
-              href="#about-me-section"
-              // onClick={() => handleNavChange("About")}
-              className={
-                currentNavLink === "About" ? "navActive" : "noNavActive"
-              }
-            >
-              About
-            </a>
+            <a href="#about-me-section">About</a>
           </li>
           <li>
-            <a
-              href="#projects-section"
-              // onClick={() => handleNavChange("Projects")}
-              className={
-                currentNavLink === "Projects" ? "navActive" : "noNavActive"
-              }
-            >
-              Portfolio
-            </a>
+            <a href="#projects-section">Portfolio</a>
           </li>
           <li>
             <a

@@ -13,8 +13,8 @@ function About() {
           <div className="bio">
             <h2>About Me</h2>
             <p>
-              As a Full-Stack Developer, I'm passionate about creating web
-              experiences that are both engaging and user-friendly. Over time,
+              As a Front-End Developer, I'm passionate about creating web
+              experiences that are both engaging and user-friendly. On my journey,
               I've honed my skills in communication, teamwork, and
               problem-solving, which have helped me lead projects and achieve
               positive results. I'm proud to hold a Full-Stack Development
@@ -30,12 +30,12 @@ function About() {
               technical & professional skills.
             </p>
             <div className="contact-container">
-              <div className="footer-icons-row">
+              <div className="social-icons-col">
                 <a
                   href="mailto: stephenkern96@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="footer-icons"
+                  className="bio-social-icons"
                 >
                   <FaMailBulk fontSize={"3em"} />
                 </a>
@@ -44,12 +44,12 @@ function About() {
                   opportunities!
                 </p>
               </div>
-              <div className="footer-icons-row">
+              <div className="social-icons-col">
                 <a
                   href="https://github.com/stephen-kern"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="footer-icons"
+                  className="bio-social-icons"
                 >
                   <FaGithubSquare fontSize={"3em"} />
                 </a>
@@ -57,12 +57,12 @@ function About() {
                   Check out my GitHub profile for more projects!
                 </p>
               </div>
-              <div className="footer-icons-row">
+              <div className="social-icons-col">
                 <a
                   href="https://www.linkedin.com/in/stephenkern96/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="footer-icons"
+                  className="bio-social-icons"
                 >
                   <FaLinkedin fontSize={"3em"} />
                 </a>

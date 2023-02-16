@@ -1,10 +1,9 @@
 :root {
-  --primary: #508AA8;
-  --secondary: #C8E0F4;
-  --tertiary: #9dd1f1;
-  --light: #fafafa;
-  --dark: #000000;
-  --darker: #031927;
+  --primary: #F7F6F2;
+  --secondary: #F0E5CF;
+  --background: #C8C6C6;
+  --accent: #4B6587;
+  --accent2: #D2CCA1;
 }
 
 * {
@@ -26,7 +25,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', sans-serif;
-  color: var(--dark);
+  background-color: var(--background);
 }
 
 .app{
@@ -51,7 +50,8 @@ header{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 15px 25px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 3rem;
   background-color: var(--primary);
 }
 
@@ -62,8 +62,7 @@ header h2 {
 }
 
 header a {
-  text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--secondary);
 }
 
 .navbar{
@@ -96,6 +95,10 @@ header nav ul li a:hover {
 
 /* === Card Styles === */
 
+#projects-section{
+  margin-top: 3rem;
+}
+
 .grid-container{
   display: grid;
   place-items: center;
@@ -103,7 +106,7 @@ header nav ul li a:hover {
 }
 
 .card {
-  background-color: #031927;
+  background-color: var(--accent);
   border-radius: 0.2rem;
 }
 
@@ -145,7 +148,7 @@ header nav ul li a:hover {
 }
 
 .card-links button {
-  background-color: #9DC7C8;
+  background-color: var(--background);
   padding: 10px 25px;
   font-size: 1rem;
   border-radius: 0.3rem;
@@ -173,14 +176,6 @@ header nav ul li a:hover {
   margin-left: var(--spacing-two);
 }
 
-.navActive {
-  color: var(--darker);
-}
-
-.noNavActive{
-  color: var(--light);
-}
-
 .section-title{
   text-align: center;
   font-size: 2rem;
@@ -188,38 +183,11 @@ header nav ul li a:hover {
   color: var(--darker);   
 }
 
-/* Contact Section Styles */
-
-.section-title-secondary{
-  text-align: center;
-  font-size: 32px;
-  padding: 25px;
-  color: var(--accent2-color);   
-}
-
-.contact-container{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-
-.footer-icons{
-  color: var(--darker);
-}
-
-.footer-icons-row{
-  display: flex;
-}
-
-.footer-icons-row p {
-  margin-left: 1rem;
-}
-
 /* About Me Section */
 
 .profile-card{
-  max-width: 90%;
-  margin: 1rem auto;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .profile-info{
@@ -230,7 +198,8 @@ header nav ul li a:hover {
 }
 
 .img-container{
-  width: 50%;
+  max-width: 23em;
+  max-height: auto;
   margin: 1rem;
 }
 
@@ -254,14 +223,43 @@ header nav ul li a:hover {
 .bio p{
   max-width: 80%;
   flex: 1;
+  font-size: 1em;
 }
 
-/* Resume Section */
+.social-icons-col{
+  display: flex;
+}
 
-.resume-section{
-  max-width: 60%;
-  margin: 0 auto;
+.social-icons-col p {
+  margin-left: 1rem;
+}
+
+.bio-social-icons {
+  color: var(--light);
+}
+
+
+footer{
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 6rem;
+  margin-top: 3rem;
+}
+
+.footer-social-container{
+  margin-right: 1rem;
+}
+
+.footer-icons{
   color: var(--darker);
+  margin: 0.3rem;
+}
+
+.footer-icons:hover{
+  color: var(--accent);
+  cursor: pointer;
 }
 
 /* Media Queries */

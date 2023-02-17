@@ -1,3 +1,6 @@
+
+/* === SET UP & UTILITY === */
+
 :root {
   --primary: #F7F6F2;
   --secondary: #F0E5CF;
@@ -44,6 +47,22 @@ a:hover {
   cursor: pointer;
 }
 
+section{
+  margin-top: 3rem;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+
+/* === HEADER === */
 
 header{
   display: flex;
@@ -95,10 +114,6 @@ header nav ul li a:hover {
 
 /* === Card Styles === */
 
-#projects-section{
-  margin-top: 3rem;
-}
-
 .grid-container{
   display: grid;
   place-items: center;
@@ -117,8 +132,9 @@ header nav ul li a:hover {
 
 .columns{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin: 0 2rem;
 }
 
 .card__img {
@@ -165,36 +181,18 @@ header nav ul li a:hover {
   opacity: .9;
 }
 
-
-.mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
-}
-
-.section-title{
-  text-align: center;
-  font-size: 2rem;
-  padding: 5px;
-  color: var(--darker);   
-}
-
-/* About Me Section */
+/* ABOUT SECTION */
 
 .profile-card{
   max-width: 80%;
   margin: 0 auto;
+  background-color: var(--accent2);
 }
 
 .profile-info{
   display: flex;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  background: var(--tertiary);
-  color: var(--secondary);
+  color: var(--accent);
 }
 
 .img-container{
@@ -213,7 +211,6 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   margin: 0 0 0.4rem 1.5rem;
-
 }
 
 .bio h2{
@@ -238,6 +235,7 @@ header nav ul li a:hover {
   color: var(--light);
 }
 
+/* === FOOTER === */
 
 footer{
   background-color: var(--primary);

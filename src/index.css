@@ -143,9 +143,6 @@ header nav ul li a:hover {
 
 .columns{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   gap: 1rem;
 }
 
@@ -217,7 +214,7 @@ header nav ul li a:hover {
 }
 
 .img-container img{
- max-width: 100%;
+ width: 100%;
  object-fit: cover;
 }
 
@@ -238,7 +235,7 @@ header nav ul li a:hover {
   max-width: 90%;
   flex: 1;
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .social-icons-col{
@@ -306,3 +303,27 @@ footer p {
 
 /* Media Queries */
 
+@media screen and (max-width: 1316px) {
+  .social-icons-col{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .profile-info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container img{
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+  }
+
+  .columns{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+}

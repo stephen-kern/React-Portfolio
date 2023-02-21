@@ -245,8 +245,25 @@ header nav ul li a:hover {
   display: flex;
 }
 
-.social-icons-col p {
+.social-icons-col .social-description {
   margin-left: 1rem;
+  display: none;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.social-icons-col:hover .social-description {
+  display: block;
+  animation: slide-in 0.5s forwards;
 }
 
 .bio-social-icons {
@@ -267,6 +284,10 @@ footer{
   align-items: center;
   min-height: 6rem;
   margin-top: 3rem;
+}
+
+footer p {
+  color: var(--secondary);
 }
 
 .footer-social-container{

@@ -4,11 +4,8 @@ function Card(props) {
   return (
     <div className="card">
       <img src={props.img} alt={props.alt} className="card__img"></img>
-      <div className="card-content">
-        <div className="card-info-container">
-          <h3 className="card-title">{props.title}</h3>
-          <p className="card-info">{props.desc}</p>
-        </div>
+        <h3 className="card-title">{props.title}</h3>
+        <p className="card-info">{props.desc}</p>
         <div className="card-links">
           <button>
             <a
@@ -31,7 +28,6 @@ function Card(props) {
             </button>
           )}
         </div>
-      </div>
     </div>
   );
 }

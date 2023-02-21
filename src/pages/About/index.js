@@ -11,7 +11,7 @@ function About() {
             <img src={portrait} alt="Portrait of Stephen"></img>
           </div>
           <div className="bio">
-            <h2>About Me</h2>
+            <h2 className="section-title">About Me</h2>
             <p>
               As a Front-End Developer, I'm passionate about creating web
               experiences that are both engaging and user-friendly. On my journey,
@@ -22,12 +22,8 @@ function About() {
               received recognition for delivering high-quality work.
               <br></br>
               <br></br>
-              Aside from coding, I enjoy the outdoors, traveling, music, art,
-              geography, puzzles and games.
-              <br></br>
-              <br></br>
-              Searching for full time front-end opportunities to enhance my
-              technical & professional skills.
+              In my free time I enjoy solving puzzles, games, the outdoors, traveling, music, art, and
+              geography.
             </p>
             <div className="contact-container">
               <div className="social-icons-col">

@@ -137,7 +137,6 @@ header nav ul li a:hover {
   flex: 1 1 21rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-self: normal;
 }
 

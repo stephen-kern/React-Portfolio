@@ -177,7 +177,7 @@ header nav ul li a:hover {
 
 .card-links button {
   background-color: var(--background);
-  padding: 10px 25px;
+  padding: 8px 25px;
   font-size: 1rem;
   border-radius: 0.3rem;
   border: none;
@@ -186,11 +186,11 @@ header nav ul li a:hover {
 
 .card-links button a {
   color: #333;
-  text-decoration: none;
 }
 
 .card-links button:hover {
-  opacity: .9;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 /* ABOUT SECTION */
@@ -236,6 +236,10 @@ header nav ul li a:hover {
   flex: 1;
   font-size: 1.1rem;
   text-align: left;
+}
+
+.social-icons-container{
+  margin-bottom: 0.5rem;
 }
 
 .social-icons-col{
@@ -326,4 +330,14 @@ footer p {
     gap: 2rem;
   }
 
+}
+
+@media screen and (max-width: 500px){
+  .grid-container, .profile-card{
+    max-width: 90%;
+  }
+
+  header h2, .navbar ul li a {
+    font-size: 4.5vw;
+  }
 }

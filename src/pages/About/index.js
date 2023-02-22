@@ -25,7 +25,7 @@ function About() {
               In my free time I enjoy solving puzzles, games, the outdoors, traveling, music, art, and
               geography.
             </p>
-            <div>
+            <div className="social-icons-container">
               <div className="social-icons-col">
                 <a
                   href="mailto: stephenkern96@gmail.com"
@@ -36,7 +36,7 @@ function About() {
                   <FaMailBulk fontSize={"3em"} />
                 </a>
                 <p className="social-description">
-                  Email me with any questions, concerns, or
+                  Email me for any questions, concerns, or
                   collaborations!
                 </p>
               </div>
@@ -63,7 +63,7 @@ function About() {
                   <FaLinkedin fontSize={"3em"} />
                 </a>
                 <p className="social-description">
-                  Connect or message me on linked in! 
+                  Connect or message me on LinkedIn! 
                 </p>
               </div>
             </div>

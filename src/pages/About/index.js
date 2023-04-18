@@ -22,8 +22,11 @@ function About() {
               received recognition for delivering high-quality work.
               <br></br>
               <br></br>
-              In my free time I enjoy solving puzzles, games, the outdoors, traveling, music, art, and
-              geography.
+              In my free time, I enjoy a wide range of hobbies and interests. 
+              I am an avid puzzle solver and enjoy playing board games with friends. 
+              I love traveling to new places and exploring different cuisines. 
+              Music and art are also passions of mine, and I enjoy exploring 
+              different genres and styles.
             </p>
             <div className="social-icons-container">
               <div className="social-icons-col">

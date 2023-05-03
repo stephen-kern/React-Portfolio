@@ -3,7 +3,7 @@ import React from "react";
 import Card from "../../components/Card";
 import LiveWire from "../../assets/images/livewire_card.png";
 import JWP from "../../assets/images/jwp_card.png";
-import RMG from "../../assets/images/readme_card.png";
+import AdviceGenie from "../../assets/images/advice-genie.png";
 
 const projectsData = [
   {
@@ -23,11 +23,12 @@ const projectsData = [
     liveLink: "https://live-wire-music.herokuapp.com/",
   },
   {
-    img: RMG,
-    alt: "screenshot of a command line interface application",
-    title: "Readme Generator",
-    desc: "A CLI application to help developers save time and quickly generate a readme file. Using only Node and the Inquirer package, this back-end project allows developers to focus more on their projects. Suitable for all types of software development!",
-    githubLink: "https://github.com/stephen-kern/Readme-Generator",
+    img: AdviceGenie,
+    alt: "screenshot of a the advice card - Don't be afraid to ask questions",
+    title: "Advice Genie",
+    desc: "This is a simple React web application that generates and displays a random piece of advice from AdviceSlipAPI. The button allows users to fetch another random piece of advice.",
+    githubLink: "https://github.com/stephen-kern/advicegenie",
+    liveLink: "https://advicegenie.vercel.app/",
   }
 ];
 

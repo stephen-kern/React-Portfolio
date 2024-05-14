@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Modal({isOpen, onClose}) {
+function Modal() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => {
+        setIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);
+    };
+    
+    Modal.openModal = openModal;
+
     return(
         <>
             {isOpen && (
-                <div className="modal-overlay" onClick={onClose}>
+                <div className="modal-overlay" onClick={closeModal}>
                 <div className="modal">
-                  <button className="close-button" onClick={onClose}>
+                  <button className="close-button" onClick={closeModal}>
                     Close
                   </button>
                   <iframe
                     title="PDF Viewer"
-                    src="your_pdf_url_here"
+                    src="../../assets/images/SK524.pdf"
                     width="100%"
                     height="100%"
                     frameborder="0"
@@ -24,3 +37,5 @@ function Modal({isOpen, onClose}) {
 
     )
 }
+
+export default Modal;

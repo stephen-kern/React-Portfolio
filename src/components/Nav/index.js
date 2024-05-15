@@ -1,5 +1,4 @@
 import React from "react";
-import Modal from "../Modal";
 
 function Nav() {
   return (
@@ -9,12 +8,12 @@ function Nav() {
           <h2>Stephen Kern</h2>
           <ul>
             <li>
-              <button onClick={(e) => {
+              {/* <button onClick={(e) => {
                 e.preventDefault();
                 Modal.openModal();
-              }}>
+                }}>
                 View Resume
-              </button>
+              </button> */}
             </li>
           </ul>
         </nav>

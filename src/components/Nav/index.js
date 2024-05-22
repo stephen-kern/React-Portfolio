@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../Modal";
 
 function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header>
       <div className="navbar-container">
@@ -8,16 +19,14 @@ function Nav() {
           <h2>Stephen Kern</h2>
           <ul>
             <li>
-              {/* <button onClick={(e) => {
-                e.preventDefault();
-                Modal.openModal();
-                }}>
-                View Resume
-              </button> */}
+              <button className="open-modal" onClick={openModal}>
+                Resume
+              </button>
             </li>
           </ul>
         </nav>
       </div>
+      <Modal isOpen={isOpen} closeModal={closeModal} />
     </header>
   );
 }

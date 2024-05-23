@@ -23,7 +23,7 @@ function Card(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live
+                Live Demo
               </a>
             </button>
           )}

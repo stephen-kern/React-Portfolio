@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
 /* === SET UP & UTILITY === */
 
 :root {
-  --primary: #F7F6F2;
-  --secondary: #E1D7C6;
-  --background: #C8C6C6;
+  --primary: #f7f6f2;
+  --secondary: #e1d7c6;
+  --background: #c8c6c6;
   --accent: #c56771;
-  --accent2: #4E6C50;
+  --accent2: #4e6c50;
   --black: #000;
-  --title: 'Questrial', sans-serif;
-  --text-font: 'Montserrat',sans-serif;
+  --title: "Questrial", sans-serif;
+  --text-font: "Montserrat", sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html{
+html {
   min-height: 100%;
 }
 
@@ -36,7 +36,7 @@ body {
   background-color: var(--background);
 }
 
-.app{
+.app {
   min-height: 100vh;
   min-height: 100dvh;
   display: grid;
@@ -53,11 +53,11 @@ a:hover {
   cursor: pointer;
 }
 
-section{
+section {
   margin-top: 3rem;
 }
 
-.section-title{
+.section-title {
   color: var(--black);
   font-size: 1.7rem;
 }
@@ -72,19 +72,23 @@ section{
   margin-left: var(--spacing-two);
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--title);
 }
 
-
 /* === HEADER === */
 
-header{
+header {
   width: 100%;
   background-color: var(--accent2);
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   color: var(--secondary);
 }
 
@@ -94,15 +98,16 @@ header h2 {
   margin: 0;
 }
 
-.navbar-container{
-  width: 70%;
+.navbar-container {
+  width: 90%;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .navbar ul {
@@ -124,7 +129,7 @@ header nav ul li a:hover {
 
 /* === Project Card Styles === */
 
-.grid-container{
+.grid-container {
   display: grid;
   margin: 3rem auto;
   max-width: 70%;
@@ -140,20 +145,20 @@ header nav ul li a:hover {
   align-self: normal;
 }
 
-.columns{
+.columns {
   display: flex;
   gap: 1rem;
 }
 
 .card__img {
-  border-radius: 0.2rem 0.2rem 0 0 ;
+  border-radius: 0.2rem 0.2rem 0 0;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: left;
 }
 
-.card-content{
+.card-content {
   margin: 0 1rem;
 }
 
@@ -163,7 +168,7 @@ header nav ul li a:hover {
   margin: 1rem 1rem 0;
 }
 
-.card-info{
+.card-info {
   font-size: 1rem;
   margin: 1rem 1rem 1.5rem;
 }
@@ -194,30 +199,30 @@ header nav ul li a:hover {
 
 /* ABOUT SECTION */
 
-.profile-card{
+.profile-card {
   max-width: 70%;
   margin: 0 auto;
   background-color: var(--accent2);
 }
 
-.profile-info{
+.profile-info {
   display: flex;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   color: var(--primary);
 }
 
-.img-container{
+.img-container {
   max-width: 23em;
   max-height: auto;
   margin: 1rem;
 }
 
-.img-container img{
- width: 100%;
- object-fit: cover;
+.img-container img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.bio{
+.bio {
   line-height: 1.25;
   font-family: var(--text-font);
   display: flex;
@@ -225,23 +230,23 @@ header nav ul li a:hover {
   margin: 0 0 0 1.5rem;
 }
 
-.bio h2{
+.bio h2 {
   margin: 1rem 0 0 0;
-  color: var(--primary)
+  color: var(--primary);
 }
 
-.bio p{
+.bio p {
   max-width: 90%;
   flex: 1;
   font-size: 1.1rem;
   text-align: left;
 }
 
-.social-icons-container{
+.social-icons-container {
   margin-bottom: 0.5rem;
 }
 
-.social-icons-col{
+.social-icons-col {
   display: flex;
 }
 
@@ -252,23 +257,23 @@ header nav ul li a:hover {
 
 /* Modal Styles */
 
-
-.open-modal{
+.open-modal, .close-modal{
   padding: 12px 16px;
   background-color: var(--accent);
   border: none;
   font-family: var(--title);
   font-size: 1.2rem;
   color: var(--primary);
+  cursor: pointer;
   transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.open-modal:hover{
+.open-modal:hover {
   background-color: hsla(354, 45%, 57%, 0.8);
 }
 
-.modal-overlay{
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -278,9 +283,10 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
-.modal-container{
+.modal-container {
   background-color: var(--primary);
   padding: 20px;
   border-radius: 8px;
@@ -291,9 +297,21 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
+.close-modal{
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
 
+.modal-container iframe {
+  flex-grow: 1;
+  width: 100%;
+  height: 500px;
+  border: none;
+  max-width: 100%;
+}
 
 /* Media Queries */
 
@@ -317,13 +335,13 @@ header nav ul li a:hover {
   color: var(--accent);
 }
 
-.bio-social-icons:hover{
+.bio-social-icons:hover {
   color: var(--background);
 }
 
 /* === FOOTER === */
 
-footer{
+footer {
   background-color: var(--accent2);
   color: var(--primary);
   display: flex;
@@ -337,16 +355,16 @@ footer p {
   color: var(--secondary);
 }
 
-.footer-social-container{
+.footer-social-container {
   margin-right: 1rem;
 }
 
-.footer-icons{
+.footer-icons {
   color: var(--primary);
   margin: 0.3rem;
 }
 
-.footer-icons:hover{
+.footer-icons:hover {
   color: var(--accent);
   cursor: pointer;
 }
@@ -354,36 +372,57 @@ footer p {
 /* Media Queries */
 
 @media screen and (max-width: 1316px) {
-  .social-icons-col{
+  .social-icons-col {
     display: none;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .profile-info{
+  .profile-info {
     flex-direction: column;
     align-items: center;
   }
 
-  .img-container img{
+  .img-container img {
     object-fit: cover;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
   }
 
-  .columns{
+  .columns {
     flex-direction: column;
     gap: 2rem;
   }
-
 }
 
-@media screen and (max-width: 500px){
-  .grid-container, .profile-card{
+@media screen and (max-width: 500px) {
+  .grid-container,
+  .profile-card {
     max-width: 90%;
   }
 
-  header h2, .navbar ul li a {
+  header h2,
+  .navbar ul li a {
     font-size: 4.5vw;
+  }
+
+  .modal-container {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .close-modal{
+    margin-bottom: 10px;
+  }
+
+  .modal-container iframe {
+    height: 300px;
+  }
+
+  .close-modal {
+    font-size: 14px;
+    padding: 8px;
   }
 }

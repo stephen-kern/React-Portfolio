@@ -14,12 +14,7 @@ export default function Modal({ isOpen, closeModal }) {
             <button className="close-modal" onClick={closeModal}>
               Close
             </button>
-            <iframe
-              src="/SK524.pdf"
-              title="Resume"
-              width="100%"
-              height="600px"
-            ></iframe>
+            <iframe src="/SK524.pdf" title="Resume"></iframe>
           </div>
         </div>
       )}

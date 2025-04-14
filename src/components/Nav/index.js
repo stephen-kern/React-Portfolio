@@ -9,7 +9,7 @@ function Nav() {
           <ul>
             <li>
               <a
-                href="https://docs.google.com/document/d/e/2PACX-1vR-rA4JZRNRRamjU1wJDqoQwfVSFmjGrDc59i10-0uCTWpfOlCOef7ZnUGoT3twM0CsZhucA0WxzISb/pub"
+                href="https://docs.google.com/document/d/e/2PACX-1vTnCVKZU9eMCrSlQcrRCjg3bt7dBYPCZGiqDIsm-g4GX5jrhI4oj_-dHzHoQqaMopBNfnvWbeVm4k1k/pub"
                 target="_blank"
                 rel="noopener noreferrer"
               >
